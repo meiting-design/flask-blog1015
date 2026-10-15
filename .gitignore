@@ -1,0 +1,18 @@
+
+# Python virtual environment 虛擬環境
+venv/
+.venv/
+
+# Python cache 暫存檔
+__pycache__/
+*.py[cod]
+
+# Environment variables 環境變數
+.env
+
+# Editor settings 編輯器設定
+.vscode/
+
+# Operating system files 作業系統檔案
+.DS_Store
+Thumbs.db

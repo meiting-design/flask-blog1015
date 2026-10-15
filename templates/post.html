@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{ post.title }} - My Blog 我的部落格</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <h1>My Blog 我的部落格</h1>
+        <p>A little space for my thoughts 我的心情與文字小天地</p>
+    </div>
+</header>
+
+<main class="container">
+
+    <p>
+        <a href="{{ url_for('index') }}">
+            ← Back to Home 返回首頁
+        </a>
+    </p>
+
+    <article class="post-card">
+
+        <h1>{{ post.title }}</h1>
+
+        <p class="post-meta">
+            Author 作者：{{ post.author }}
+        </p>
+
+        <hr>
+
+        <div class="post-content">{{ post.content }}</div>
+
+    </article>
+
+    <p>
+        <a class="button" href="{{ url_for('index') }}">
+            Back to Home 返回首頁
+        </a>
+    </p>
+
+</main>
+
+<footer>
+    <div class="container">
+        Made with love 用心製作的部落格 ♥
+    </div>
+</footer>
+
+</body>
+</html>
